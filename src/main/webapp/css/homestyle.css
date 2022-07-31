@@ -1,0 +1,45 @@
+.st_all {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.st_body {
+    overflow: hidden;
+    height: 85vh;
+    background: #000;
+}
+
+.st_section {
+    height: 85vh;
+}
+
+.st_span {
+    position: absolute;
+    pointer-events: none;
+    background: #fff;
+    animation: animate 5s linear infinite;
+}
+
+.st_text {
+    color: white;
+    text-align: center;
+    margin: 200px;
+}
+
+@keyframes animate {
+    0% {
+        transform: scale(0) translate(0) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1) translateY(-500%) rotate(360deg);
+        opacity: 0;
+    }
+}
